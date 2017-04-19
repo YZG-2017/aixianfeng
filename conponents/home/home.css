@@ -1,0 +1,81 @@
+#header{
+    height: 10%;
+    width: 100%;
+    background: #ffd600;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+#box{
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+}
+/*获取首页轮播图*/
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-slide img{
+    width: 100%;
+}
+
+/*每日必抢，鲜货直达，整箱够，乳品*/
+#content1{
+    width: 100%;
+    /*height: 100%;*/
+}
+#content1>li{
+    float: left;
+    width: 25%;
+    /*height: 100%;*/
+}
+#content1>li>img{
+    width: 100%;
+}
+#content1>li>p{
+    text-align: center;
+}
+
+
+
+
+/*最后，优选水果，牛奶面包，卤味熟食，饮料酒水，休闲零食，方便速食*/
+#content6{
+    width: 100%;
+    height: 100%;
+}
+#content6>li{
+
+}
+#content6>li>header{
+    color: red;
+    font-size: 20px;
+}
+#content6>li>img{
+    width: 100%;
+}
+#content6>li>ul{
+    width: 100%;
+    height: 100%;
+}
+#content6>li>ul>li{
+    width: 33%;
+    float: left;
+}
+#content6>li>ul>li>img{
+    width: 100%;
+}
+#content6>li>ul>li>p{
+    display: inline-block;
+    width: 70%;
+}
+#content6>li>ul>li>span{
+    display: inline-block;
+    width: 30%;
+    color: red;
+    font-size: 30px;
+    border: 1px solid red;
+    border-radius: 50%;
+}

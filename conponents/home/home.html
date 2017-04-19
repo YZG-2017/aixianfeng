@@ -1,0 +1,34 @@
+<!--头部-->
+<div id="header"></div>
+<div id="box">
+    <!--首页轮播图-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="item in arrSwiper">
+                <img src="{{item.activity.img}}" alt=""/>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!--每日必抢，鲜货直达，整箱够，乳品-->
+    <ul id="content1">
+        <li  ng-repeat="item in arr1"><img src="{{item.activity.img}}" alt=""><p></p></li>
+    </ul>
+    <!--三元酸奶，水果权益日，鲜货直供-->
+
+    <!--便利店，一小时送到家-->
+
+
+    <!--最后，优选水果，牛奶面包，卤味熟食，饮料酒水，休闲零食，方便速食-->
+    <ul id="content6" ng-repeat="item in arrLast">
+        <li>
+            <header>{{item.category_detail.name}}</header><img src="{{item.activity.img}}" alt="">
+            <ul class="content6DetailLi">
+                <li ng-repeat="item2 in item.category_detail.goods"><img src="{{item2.img}}" alt=""><p>{{item2.name}}</p><span>+</span></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>

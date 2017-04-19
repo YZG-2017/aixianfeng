@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="aixianfeng">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/swiper-3.4.1.min.css"/>
+</head>
+<script src="js/libs/angular.js"></script>
+<script src="js/libs/angular-route.js"></script>
+<script src="js/libs/angular-css.min.js"></script>
+<script src="app.js"></script>
+<script src="conponents/home/home.js"></script>
+<script src="js/libs/swiper-3.4.1.min.js"></script>
+<script src="conponents/category/category.js"></script>
+<body>
+<div id="wrap">
+    <div id="main" ng-view=""></div>
+    <div id="tab">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#category">闪送超市</a></li>
+            <li><a href="#shopcar">购物车</a></li>
+            <li><a href="#mine">我的</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

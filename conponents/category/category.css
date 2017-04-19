@@ -1,0 +1,139 @@
+#header{
+    height: 10%;
+    width: 100%;
+    background: #ffd600;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#box{
+    height: 100%;
+    width: 100%;
+    /*margin-top: 10%;*/
+    position: fixed;
+    top: 10%;
+}
+
+.leftMenu{
+    width: 25%;
+    height: 100%;
+    /*position: absolute;*/
+    /*left: 0;*/
+    float: left;
+}
+.leftMenu li{width: 100%;height: 50px;text-align: center;background: rgb(246,246,247);border-bottom: 1px solid rgb(211,211,211);}
+.leftMenu a{line-height: 50px;}
+
+.rightData{
+    width: 75%;
+    background: lightcyan;
+    height: 100%;
+    overflow: auto;
+    /*position: absolute;*/
+    /*right: 0;*/
+    float: left;
+    position: relative;
+
+}
+/*.rightData .sort{*/
+/*height: 50px;*/
+/*}*/
+.sort>.sort-sub{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    /*top: 50px;*/
+    top:10%;
+    /*left: 25%;*/
+    z-index: 99;
+    background: lightgrey;
+}
+.sort>.sort-sub>li{
+    float: left;
+    width: 37.5%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.sort>.filter-items{
+    position: fixed;
+    left: 25%;
+    top: 100px;
+    width: 75%;
+    z-index: 99;
+    background: lightblue;
+}
+.sort>.filter-items>li{
+    float: left;
+    width: 30%;
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid grey;
+    /*display: none;*/
+    border-radius: 5px;
+    margin: 5px 0 0 5px;
+}
+.sort>.filter-items>li>p{
+    text-align: center;
+}
+.sort>.sortData{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+.srot>.sortData>ul{
+    /*position: absolute;*/
+
+}
+.sortData li{
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid lightgray;
+    background: white;
+}
+.sortData li>div:nth-child(1){
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.sortData li>div:nth-child(2){
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+.sortData li>div:nth-child(2)>p:nth-child(1){
+    font-size: 16px;
+}
+.sortData li>div:nth-child(2)>p:nth-child(2){
+    color: red;
+    display: inline-block;
+    width: 80%;
+}
+.sortData li>div:nth-child(2)>p:nth-child(3)>span:nth-child(1){
+    display: inline-block;
+    width: 20%;
+    /*height: 30%;*/
+    color: red;
+    font-size: 30px;
+    border: 1px solid red;
+    border-radius: 50%;
+    /*padding: 0 5px 0 0;*/
+    /*background: #808080;*/
+}
+.sortData li>div:nth-child(2)>p:nth-child(3)>span:nth-child(3){
+    display: inline-block;
+    width: 20%;
+    /*height: 30%;*/
+    color: red;
+    font-size: 30px;
+    border: 1px solid red;
+    border-radius: 50%;
+    /*padding: 0 5px 0 0;*/
+    /*background: lightblue;*/
+}
+.sortData img{
+    /*height: 100px;*/
+    width: 100%;
+}
